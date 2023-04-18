@@ -16,6 +16,12 @@
         @apply inline-block whitespace-nowrap rounded-md  px-4 py-4  text-2xl text-primary  border border-neutral hover:bg-primary hover:text-base-200  w-full;
       
     }
+    .btn-arrow{
+        @apply p-3 rounded-full border border-primary hover:bg-primary hover:text-white 
+    }
+    .btn-transition{
+        @apply 
+    }
     body{
         @apply bg-white; font-family: 'Poppins', sans-serif;
     }
