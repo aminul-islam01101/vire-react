@@ -1,12 +1,12 @@
 import React from 'react';
 import { RxArrowTopRight } from 'react-icons/rx';
 
-const Button = ({ children }) => {
+const Button = ({ children, handleButtonClick }) => {
   console.log('hello');
 
   return (
     <div>
-      <button type="button">
+      <button type="button" onClick={handleButtonClick}>
         <div className="flex items-center gap-5 ">
           <div className="relative inline-block">
             <div className="p-7 rounded-full border border-primary hover:bg-primary hover:text-white focus:bg-primary focus:text-white">

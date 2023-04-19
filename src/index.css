@@ -22,9 +22,29 @@
     .btn-transition{
         @apply 
     }
+    .article-heading:hover h2:first-child {
+        @apply translate-x-6;
+      }
+      
+      .article-heading:hover h2:last-child {
+        @apply -translate-y-6;
+      }
+
     body{
         @apply bg-white; font-family: 'Poppins', sans-serif;
     }
 }
 
+.hover\\:block:hover {
+    display: block;
+  }
+  
+  .hover\\:scale-150:hover {
+    transform: scale(1.5);
+  }
+  
+  .hover\\:scale-500:hover {
+    transform: scale(5);
+  }
+  
 
