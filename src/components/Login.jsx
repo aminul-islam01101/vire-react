@@ -7,9 +7,9 @@ const Login = () => {
   console.log('login');
 
   return (
-    <div className="p-11 flex gap-72">
+    <div className="py-11 flex gap-40 items-center">
       {/* login card */}
-      <section className="p-24 bg-secondary rounded-3xl">
+      <section className="p-24 bg-secondary rounded-3xl w-1/2">
         <header>
           <img src="" alt="logo" />
         </header>
