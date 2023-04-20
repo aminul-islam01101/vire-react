@@ -12,26 +12,26 @@
         @apply inline-block whitespace-nowrap rounded-md border border-primary text-primary px-4 py-2  uppercase  outline-none;
         font-size: 0.8rem;
     }
-    .btn-large{
+    .btn-large {
         @apply inline-block whitespace-nowrap rounded-md  px-4 py-4  text-2xl text-primary  border border-neutral hover:bg-primary hover:text-base-200  w-full;
-      
     }
-    .btn-arrow{
-        @apply p-3 rounded-full border border-primary hover:bg-primary hover:text-white 
+    .btn-arrow {
+        @apply p-3 rounded-full border border-primary hover:bg-primary hover:text-white;
     }
-    .btn-transition{
-        @apply 
+    .btn-transition {
+        @apply;
     }
     .article-heading:hover h2:first-child {
         @apply translate-x-6;
-      }
-      
-      .article-heading:hover h2:last-child {
-        @apply -translate-y-4 lg:-translate-y-6;
-      }
+    }
 
-    body{
-        @apply bg-white; font-family: 'Poppins', sans-serif;
+    .article-heading:hover h2:last-child {
+        @apply -translate-y-4 lg:-translate-y-6;
+    }
+
+    body {
+        @apply bg-white;
+        font-family: 'Poppins', sans-serif;
     }
 }
 /* input:focus {
@@ -41,106 +41,109 @@
 *,
 *:before,
 :after {
-  padding: 0%;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
 }
- */* Default padding for smaller screens  */
+*/* Default padding for smaller screens  */
 .my-layout {
-  padding: 10px;
+    padding: 10px;
 }
 
 /* Add padding of 310px on screens larger than 1920px */
 @media (min-width: 1840px) and (max-width: 3000px) {
-  .my-layout {
-    padding: 0 250px;
-  }
+    .my-layout {
+        padding: 0 250px;
+    }
 }
 
 @media (max-width: 1830px) {
-  .my-layout {
-    padding: 0 140px;
-  }
+    .my-layout {
+        padding: 0 140px;
+    }
 }
 
 /* Add padding of 155px on screens larger than 1440px */
 @media (max-width: 1440px) {
-  .my-layout {
-    padding: 0 120px;
-  }
+    .my-layout {
+        padding: 0 120px;
+    }
 }
 
 /* Add padding of 77.5px on screens larger than 1024px */
 @media (max-width: 1024px) {
-  .my-layout {
-    padding: 0 77.5px;
-  }
+    .my-layout {
+        padding: 0 77.5px;
+    }
 }
 
 /* Add padding of 38.5px on screens larger than 768px */
 @media (max-width: 768px) {
-  .my-layout {
-    padding: 0 38.5px;
-  }
+    .my-layout {
+        padding: 0 38.5px;
+    }
 }
 
 /* Add padding of 21.5px on screens larger than 425px */
 @media (max-width: 425px) {
-  .my-layout {
-    padding: 0 21.5px;
-  }
+    .my-layout {
+        padding: 0 21.5px;
+    }
 }
 
 /* Add padding of 10.75px on screens larger than 375px */
 @media (max-width: 375px) {
-  .my-layout {
-    padding: 0 10.5px;
-  }
+    .my-layout {
+        padding: 0 10.5px;
+    }
 }
 
 /* Add padding of 5.3px on screens larger than 320px */
 @media (max-width: 320px) {
-  .my-layout {
-    padding: 0 5.3px;
-  }
+    .my-layout {
+        padding: 0 5.3px;
+    }
 }
 
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
-  transition: background-color 600000s 0s, color 600000s 0s;
+    transition: background-color 600000s 0s, color 600000s 0s;
 }
 input[data-autocompleted] {
-  background-color: transparent !important;
+    background-color: transparent !important;
 }
 .select2-selection__input:focus {
-  box-shadow: none !important;
-  outline: none;
+    box-shadow: none !important;
+    outline: none;
 }
 select:focus {
-  outline: none;
+    outline: none;
 }
 .submenu-content {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.5s ease-in-out !important;
-
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out !important;
 }
 
 .submenu-content-open {
-  opacity: 1;
-  max-height: 1000px;
-  transition: all 0.5s ease-in-out !important;
+    opacity: 1;
+    max-height: 1000px;
+    transition: all 0.5s ease-in-out !important;
 
-  transition-delay: 0.1s;
-
+    transition-delay: 0.1s;
 }
 
 .submenu-content-closed {
-  opacity: 0;
-  max-height: 0;
-  transition: all 0.5s ease-in-out !important;
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.5s ease-in-out !important;
 
-  transition-delay: 0.1s;
- 
+    transition-delay: 0.1s;
 }
+.m-height{
+    max-height: 90vh !important;
+}
+body.modal-open {
+    overflow: hidden;
+  }

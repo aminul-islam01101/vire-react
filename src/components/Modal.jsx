@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function Modal({ isOpen, onClose, children }) {
   const overlayClasses = isOpen ? 'fixed inset-0 bg-black opacity-50 z-50' : 'hidden';
@@ -6,6 +6,13 @@ function Modal({ isOpen, onClose, children }) {
   const modalClasses = isOpen
     ? 'fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-2xl shadow-lg z-50'
     : 'hidden';
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add('modal-open');
+    } else {
+      document.body.classList.remove('modal-open');
+    }
+  }, [isOpen]);
 
   return (
     <>

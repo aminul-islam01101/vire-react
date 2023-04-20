@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Image = ({ src, alt }) => (
-  <div className="relative rounded-3xl overflow-hidden w-full h-full">
+  <div className="relative rounded-xl lg:rounded-3xl overflow-hidden w-full h-[300px] md:h-[400px] lg:h-[450px] xl:h-[500px] 5xl:h-[550px] extra-large:h-[600px] mt-10 md:mt-10 lg:mt-0">
     <img
-      className="absolute  top-0 left-0 w-full h-full object-cover transform transition-all duration-500 ease-in-out hover:scale-150 hover:z-10"
+      className="absolute object-cover left-0 aspect-square h-full w-full transform transition-all duration-500 ease-in-out hover:scale-150 hover:z-10"
       src={src}
       alt={alt}
     />

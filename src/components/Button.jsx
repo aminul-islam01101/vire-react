@@ -16,7 +16,7 @@ const Button = ({ children, handleButtonClick }) => {
             </div>
           </div>
 
-          <span>{children}</span>
+          <span className='text-xl'>{children}</span>
         </div>
       </button>
     </div>

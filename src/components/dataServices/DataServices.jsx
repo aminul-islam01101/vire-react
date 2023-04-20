@@ -9,7 +9,7 @@ const DataServices = ({ handleDataServices, dataServiceOpen }) => {
   console.log('hello');
 
   return (
-    <div className="my-layout">
+    <div className="">
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-10 xl:gap-x-14 xl:px-8 lg:px-6 5xl:px-14 extra-large:px-16 extra-large:gap-20 h-full w-full lg:my-10 xl:my-20 justify-start items-start">
         <figure className="justify-start items-start relative top-0">
           <Image

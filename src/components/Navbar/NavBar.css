@@ -1,0 +1,19 @@
+.dropdown-menu {
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+.dropdown:hover .dropdown-menu {
+    pointer-events: auto;
+    display: block;
+}
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: transparent;
+}
